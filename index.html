@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lab_3</title>
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <div class="navbar" id="navbar">
+      <a href="#" class="link" id="active_link">ENCODE</a>
+      <a href="#" class="link">DECODE</a>
+    </div>
+
+    <div class="content">
+
+      <div class="encode code">
+
+        <div class="left-section">
+          <label for="message">Message for encode:</label>
+          <input type="text" placeholder="Input message..." name="message" id="encode-input">
+          <p>Received message:</p>
+          <p class="received-m field" id="received-m"></p>
+          <p>Encode message:</p>
+          <p class="encode-m field" id="encode-m"></p>
+          <button type="button" name="button" id="btn-encode" class="button">ENCODE</button>
+        </div>
+        <div class="right-section">
+          <div class="wrapper-encode">
+            <div class="section" id="section1"></div>
+            <div class="section" id="section2"></div>
+            <div class="section" id="section3"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="decode code">
+
+        <div class="left-section">
+          <label for="message">Message for decode:</label>
+          <input type="text" placeholder="Input message..." name="message" id="decode-input">
+          <p>Received message:</p>
+          <p class="received-m-dec field" id="received-m-dec"></p>
+          <p class="bug" id="bug"></p>
+          <p>Decode message:</p>
+          <p class="decode-m field" id="decode-m"></p>
+          <button type="button" name="button" id="btn-decode" class="button btn-left">DECODE</button>
+        </div>
+        <div class="right-section">
+          <div class="wrapper-decode" id="wrapper-decode">
+            <div class="section" id="section1-dec"></div>
+            <div class="section" id="section2-dec"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js" charset="utf-8"></script>
+</body>
+</html>
